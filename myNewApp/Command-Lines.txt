@@ -1,0 +1,13 @@
+//command lines:
+
+ng serve (start webpage)
+ng serve --port 4401
+
+npm install express --save (install express)
+nodemon server.js // node server.js (to start the server side)
+npm install mongoose --save (install mongoose)
+npm install body-parser --save (install body for post in app.js)
+npm install --save-dev nodemon (to keep server running and not pause and starting it on changing any syntax)
+
+//DB password
+4QzeRc6uVGSGH8z
