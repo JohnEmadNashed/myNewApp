@@ -3,7 +3,6 @@ const router = express.Router();
 router.post("/api/posts");
 const Post = require('../models/post');
 
-
 router.post("",(req, res, next) => {
   const post = new Post({
     title: req.body.title,
