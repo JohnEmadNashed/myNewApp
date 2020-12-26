@@ -4,6 +4,8 @@ ng serve (start webpage)
 ng serve --port 4401
 
 npm install express --save (install express)
+npm install --save mongoose-unique-validator (the unique email vaildator in mongoose)
+npm install --save bcrypt (crypting password)
 nodemon server.js // node server.js (to start the server side)
 npm install mongoose --save (install mongoose)
 npm install body-parser --save (install body for post in app.js)
