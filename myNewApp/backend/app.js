@@ -11,7 +11,8 @@
       .then(()=> {
           console.log('Connected to MongoDB using Mongoose :)')
       })
-      .catch(()=> {
+      .catch((err)=> {
+        console.log(err)
             console.log('Connection to MongoDb failed :(')
       });
 
@@ -21,7 +22,7 @@
 
       app.use( (req, res, next) => {
         res.setHeader("Access-Control-Allow-Origin" , "*");
-        res.setHeader("Access-Control-Allow-Headers" , "Origin, X-Requested-with, Content-Type, Accept");
+        res.setHeader("Access-Control-Allow-Headers" , "Origin, X-Requested-with, Content-Type, Accept, Authorization");
         res.setHeader("Access-Control-Allow-Methods","GET, POST, DELETE, PATCH, PUT, OPTIONS");
         next();
       });
