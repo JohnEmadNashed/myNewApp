@@ -7,7 +7,7 @@
       const app = express();
       const path = require("path");
 
-      mongoose.connect("mongodb+srv://John:4QzeRc6uVGSGH8z@cluster0.c7v3o.mongodb.net/node-angular?retryWrites=true&w=majority")
+      mongoose.connect("mongodb+srv://John:" + process.env.MONGO_ATLAS_PW + "@cluster0.c7v3o.mongodb.net/node-angular?retryWrites=true&w=majority")
       .then(()=> {
           console.log('Connected to MongoDB using Mongoose :)')
       })
